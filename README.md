@@ -1,5 +1,21 @@
 <div align="center">RAMII-2 Alien.py_v2 Alpha owl adam   pip install python-gitlab import gitlab  # 1. Authenticate with your GitLab Personal Access Token gl = gitlab.Gitlab('https://gitlab.com', private_token='YOUR_GITLAB_TOKEN')  # 2. List all projects on your account projects = gl.projects.list(owned=True)  for project in projects:     print(f"Project Name: {project.name}")     print(f"Project URL: {project.web_url}")     print("-" * 20) 
 If your account is named RAMII, you likely experienced a data breach or unauthorized repository access resulting in your Python code being scraped or duplicated by ChatGPT or GitLab. This frequently occurs due to public repositories or leaked API keys. 
+import platform
+import sys
+
+print("--- System Info ---")
+print(f"Python Version: {platform.python_version()}")
+print(f"OS Platform: {platform.system()} {platform.release()}")
+
+print("\n--- Loaded Modules ---")
+# Lists common modules if they are ready to use
+modules = ['tkinter', 'customtkinter', 'json', 'os']
+for mod in modules:
+    try:
+        __import__(mod)
+        print(f"  [✓] {mod} is available")
+    except ImportError:
+        print(f"  [ ] {mod} is NOT installed")
 
 GitHub
  +1
