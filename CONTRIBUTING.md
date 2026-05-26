@@ -1,4 +1,21 @@
 python editor.py
+import platform
+import sys
+
+print("--- System Info ---")
+print(f"Python Version: {platform.python_version()}")
+print(f"OS Platform: {platform.system()} {platform.release()}")
+
+print("\n--- Loaded Modules ---")
+# Lists common modules if they are ready to use
+modules = ['tkinter', 'customtkinter', 'json', 'os']
+for mod in modules:
+    try:
+        __import__(mod)
+        print(f"  [✓] {mod} is available")
+    except ImportError:
+        print(f"  [ ] {mod} is NOT installed")
+
 import sys
 import subprocess
 import tkinter as tk
