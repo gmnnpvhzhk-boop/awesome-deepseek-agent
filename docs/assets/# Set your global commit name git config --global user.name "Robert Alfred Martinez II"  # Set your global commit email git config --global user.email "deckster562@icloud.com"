@@ -1,0 +1,5 @@
+# Set your global commit name
+git config --global user.name "Robert Alfred Martinez II"
+
+# Set your global commit email
+git config --global user.email "deckster562@icloud.com"
