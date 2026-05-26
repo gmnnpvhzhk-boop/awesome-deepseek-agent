@@ -1,5 +1,9 @@
 [English](./workbuddy.md) | [简体中文](./workbuddy.zh-CN.md) · [← 返回](../README.zh-CN.md)
+# Set your global commit name
+git config --global user.name "Robert Alfred Martinez II"
 
+# Set your global commit email
+git config --global user.email "deckster562@icloud.com"
 # 接入 WorkBuddy/CodeBuddy
 
 WorkBuddy/CodeBuddy 是 AI Agent 与编程助手工具。它支持通过本地模型配置文件添加自定义模型，可以使用 OpenAI 兼容的 Chat Completions API 接入 DeepSeek V4。
